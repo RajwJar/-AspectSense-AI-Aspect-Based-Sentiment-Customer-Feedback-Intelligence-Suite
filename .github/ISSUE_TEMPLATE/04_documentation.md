@@ -3,7 +3,7 @@ name: "Task: Documentation, Presentation & Capstone Reporting"
 about: "Author comprehensive documentation, presentation slide deck, capstone report, and assignments."
 title: "[DOCS] Comprehensive Documentation, Slide Deck & Academic Report"
 labels: ["documentation", "presentation", "capstone", "phase-4"]
-assignees: ["rajkeshav2324"]
+assignees: ["RajwJar"]
 ---
 
 ### Objective

@@ -17,8 +17,8 @@ This guide provides step-by-step instructions for installing, configuring, testi
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/rajkeshav2324/NLP_Pro.git
-cd NLP_Pro
+git clone https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite.git
+cd -AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite
 ```
 
 ### Step 2: Create and Activate Virtual Environment

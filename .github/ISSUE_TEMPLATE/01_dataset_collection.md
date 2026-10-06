@@ -3,7 +3,7 @@ name: "Task: Dataset Collection & Exploratory Data Analysis"
 about: "Track dataset acquisition, cleaning, preprocessing, and EDA for multi-domain customer feedback."
 title: "[DATASET] Collection, Preprocessing & EDA Pipeline"
 labels: ["dataset", "nlp-preprocessing", "phase-1"]
-assignees: ["rajkeshav2324"]
+assignees: ["RajwJar"]
 ---
 
 ### Objective

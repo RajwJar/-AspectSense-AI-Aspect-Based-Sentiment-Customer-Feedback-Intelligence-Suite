@@ -6,10 +6,11 @@
 ## 📌 Project & Student Information
 | Metadata Field | Value / Details |
 |---|---|
-| **Student Name** | **Raj Keshav** *(Editable Placeholder)* |
-| **Registration Number** | **REG-2024-NLP-8842** *(Editable Placeholder)* |
+| **Student Name** | **Raj Keshav** |
+| **Registration Number** | **REG-2024-NLP-8842** |
 | **Project Title** | **AspectSense AI: Aspect-Based Sentiment & Feedback Intelligence Engine with Gemini LLM Integration** |
-| **GitHub Username** | **[rajkeshav2324](https://github.com/rajkeshav2324)** *(Editable Placeholder)* |
+| **GitHub Username** | **[RajwJar](https://github.com/RajwJar)** |
+| **Repository URL** | **[https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite](https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite)** |
 | **Training Program Details** | **Advanced NLP & Generative AI Specialization / Capstone Track 2026** |
 
 ---
@@ -196,8 +197,8 @@ NLP_Pro/
 
 ### Step 1: Clone Repository & Create Virtual Environment
 ```bash
-git clone https://github.com/rajkeshav2324/NLP_Pro.git
-cd NLP_Pro
+git clone https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite.git
+cd -AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite
 
 # Windows
 python -m venv .venv

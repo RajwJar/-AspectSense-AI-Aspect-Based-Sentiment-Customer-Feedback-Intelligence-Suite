@@ -27,7 +27,7 @@ style: |
 **Author:** Raj Keshav  
 **Registration Number:** REG-2024-NLP-8842  
 **Track:** Advanced NLP & Generative AI Capstone 2026  
-**Repository:** [github.com/rajkeshav2324/NLP_Pro](https://github.com/rajkeshav2324/NLP_Pro)
+**Repository:** [github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite](https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite)
 
 ---
 

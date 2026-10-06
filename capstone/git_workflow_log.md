@@ -27,7 +27,7 @@ feature/deployment ────────────────────�
 
 ## 📋 Milestone 1: Dataset Collection & EDA
 - **Assigned Issue:** `#1 - [DATASET] Collection, Preprocessing & EDA Pipeline`
-- **Assignee:** `@rajkeshav2324`
+- **Assignee:** `@RajwJar`
 - **Branch:** `feature/dataset-collection`
 - **Key Commits:**
   - `git commit -m "feat(data): curate multi-domain benchmark reviews dataset with aspect annotations"`
@@ -41,7 +41,7 @@ feature/deployment ────────────────────�
 
 ## 🤖 Milestone 2: Model Development & LLM Integration
 - **Assigned Issue:** `#2 - [MODEL] ABSA Pipeline & Gemini LLM Integration`
-- **Assignee:** `@rajkeshav2324`
+- **Assignee:** `@RajwJar`
 - **Branch:** `feature/model-development`
 - **Key Commits:**
   - `git commit -m "feat(core): implement TextPreprocessor with clause segmentation and negation tagging"`
@@ -58,7 +58,7 @@ feature/deployment ────────────────────�
 
 ## 🧪 Milestone 3: Testing & Evaluation Suite
 - **Assigned Issue:** `#3 - [TESTING] ABSA Metrics, Unit Tests & Latency Benchmarks`
-- **Assignee:** `@rajkeshav2324`
+- **Assignee:** `@RajwJar`
 - **Branch:** `feature/testing`
 - **Key Commits:**
   - `git commit -m "test(core): add 21 unit tests covering preprocessor, extractor, analyzer, and API"`
@@ -73,7 +73,7 @@ feature/deployment ────────────────────�
 
 ## 📚 Milestone 4: Documentation, Presentation & Capstone
 - **Assigned Issue:** `#4 - [DOCS] Comprehensive Documentation, Slide Deck & Academic Report`
-- **Assignee:** `@rajkeshav2324`
+- **Assignee:** `@RajwJar`
 - **Branch:** `feature/documentation`
 - **Key Commits:**
   - `git commit -m "docs: add modular assignments 1 through 4 with runnable solutions"`
@@ -89,7 +89,7 @@ feature/deployment ────────────────────�
 
 ## 🚀 Milestone 5: Deployment, Interactive UI & REST API
 - **Assigned Issue:** `#5 - [DEPLOY] Interactive Streamlit Dashboard & FastAPI Deployment`
-- **Assignee:** `@rajkeshav2324`
+- **Assignee:** `@RajwJar`
 - **Branch:** `feature/deployment`
 - **Key Commits:**
   - `git commit -m "feat(web): build interactive multi-aspect Streamlit dashboard with LLM panel"`

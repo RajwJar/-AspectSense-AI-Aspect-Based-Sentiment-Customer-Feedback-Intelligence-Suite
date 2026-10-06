@@ -3,7 +3,7 @@ name: "Task: Testing & Evaluation Suite"
 about: "Construct unit tests, performance benchmarks, and evaluation metrics for ABSA & LLM pipeline."
 title: "[TESTING] ABSA Metrics, Unit Tests & Latency Benchmarks"
 labels: ["testing", "evaluation", "qa", "phase-3"]
-assignees: ["rajkeshav2324"]
+assignees: ["RajwJar"]
 ---
 
 ### Objective

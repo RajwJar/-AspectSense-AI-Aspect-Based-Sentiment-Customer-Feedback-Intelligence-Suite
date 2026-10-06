@@ -3,7 +3,7 @@ name: "Task: Model Development & LLM Integration"
 about: "Develop Aspect-Based Sentiment Analysis (ABSA) model and integrate Gemini LLM API."
 title: "[MODEL] ABSA Pipeline & Gemini LLM Integration"
 labels: ["model-development", "llm-api", "phase-2"]
-assignees: ["rajkeshav2324"]
+assignees: ["RajwJar"]
 ---
 
 ### Objective

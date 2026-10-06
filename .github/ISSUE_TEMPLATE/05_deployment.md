@@ -3,7 +3,7 @@ name: "Task: Deployment, Interactive UI & REST API Service"
 about: "Build and deploy the interactive Streamlit dashboard, FastAPI web service, and Docker containerization."
 title: "[DEPLOY] Interactive Streamlit Dashboard & FastAPI Deployment"
 labels: ["deployment", "fastapi", "streamlit", "docker", "phase-5"]
-assignees: ["rajkeshav2324"]
+assignees: ["RajwJar"]
 ---
 
 ### Objective
