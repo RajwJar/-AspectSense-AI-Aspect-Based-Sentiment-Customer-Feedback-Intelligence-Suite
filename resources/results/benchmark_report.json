@@ -1,0 +1,76 @@
+{
+  "dataset_samples": 50,
+  "sentiment_classification": {
+    "accuracy": 0.68,
+    "macro_precision": 0.6269,
+    "macro_recall": 0.5119,
+    "macro_f1": 0.5374,
+    "weighted_f1": 0.716,
+    "classes": [
+      "mixed",
+      "negative",
+      "neutral",
+      "positive"
+    ],
+    "per_class": {
+      "mixed": {
+        "precision": 1.0,
+        "recall": 0.4118,
+        "f1_score": 0.5833,
+        "support": 17
+      },
+      "negative": {
+        "precision": 0.6842,
+        "recall": 0.8125,
+        "f1_score": 0.7429,
+        "support": 16
+      },
+      "neutral": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 0
+      },
+      "positive": {
+        "precision": 0.8235,
+        "recall": 0.8235,
+        "f1_score": 0.8235,
+        "support": 17
+      }
+    },
+    "confusion_matrix": {
+      "mixed": {
+        "mixed": 7,
+        "negative": 6,
+        "neutral": 1,
+        "positive": 3
+      },
+      "negative": {
+        "mixed": 0,
+        "negative": 13,
+        "neutral": 3,
+        "positive": 0
+      },
+      "neutral": {
+        "mixed": 0,
+        "negative": 0,
+        "neutral": 0,
+        "positive": 0
+      },
+      "positive": {
+        "mixed": 0,
+        "negative": 0,
+        "neutral": 3,
+        "positive": 14
+      }
+    },
+    "total_samples": 50
+  },
+  "aspect_extraction": {
+    "aspect_precision": 0.5556,
+    "aspect_recall": 0.414,
+    "aspect_f1": 0.4745,
+    "true_entities_count": 157,
+    "pred_entities_count": 117
+  }
+}
