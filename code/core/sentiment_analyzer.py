@@ -32,6 +32,8 @@ POLARITY_LEXICON: Dict[str, float] = {
     "rigid": -1.5, "steep": -1.2, "bulky": -1.3, "tight": -1.1,
     "outdated": -1.8, "warmer": -1.0, "mushy": -1.4, "slow": -1.6,
     "overheating": -2.3, "overheats": -2.3, "annoying": -2.0, "fails": -2.2,
+    "drain": -2.0, "drains": -2.2, "draining": -2.0, "subpar": -2.0, "poor": -2.2,
+    "unhelpful": -2.6, "horrible": -3.0, "frustrating": -2.2, "disappointing": -2.2,
     # Strong Negative (-2.5 to -3.8)
     "overpriced": -2.5, "junk": -3.2, "refused": -2.8, "terrible": -3.0,
     "disastrous": -3.5, "fried": -3.0, "lost": -2.4, "avoid": -3.2,

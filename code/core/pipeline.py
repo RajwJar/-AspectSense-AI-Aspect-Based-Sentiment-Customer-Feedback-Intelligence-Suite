@@ -123,7 +123,7 @@ def run_sanity_check():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="AspectSense AI Pipeline CLI")
     parser.add_argument("--sanity-check", action="store_true", help="Run sanity check")
-    parser.add_argument("--text", typestr=str, help="Text to analyze")
+    parser.add_argument("--text", type=str, help="Text to analyze")
     parser.add_argument("--domain", type=str, default="Technology", help="Product domain")
     args = parser.parse_args()
 
