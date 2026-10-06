@@ -1,13 +1,14 @@
 # AspectSense AI - Spoken Presentation Script & Delivery Guide
 
-**Presenter:** Raj Keshav (Registration Number: REG-2024-NLP-8842)  
+**Presenter:** Keshav Raj (Registration Number: 23FE10CDS00476)  
+**Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)  
 **Target Duration:** 10–12 minutes  
 **Audience:** Technical Reviewers, Program Evaluators, and Engineering Leadership
 
 ---
 
 ### Slide 1: Introduction (1:00 min)
-> *"Good morning / afternoon everyone. My name is Raj Keshav, and today I am excited to present **AspectSense AI**, an enterprise-grade Aspect-Based Sentiment Analysis and customer feedback intelligence platform that meaningfully integrates Google Gemini 3.8 Flash LLM API. In this project, we solve the challenge of converting noisy, unstructured customer feedback into actionable engineering diagnostics."*
+> *"Good morning / afternoon everyone. My name is Keshav Raj, and today I am excited to present **AspectSense AI**, an enterprise-grade Aspect-Based Sentiment Analysis and customer feedback intelligence platform that meaningfully integrates Google Gemini 3.8 Flash LLM API. In this project, we solve the challenge of converting noisy, unstructured customer feedback into actionable engineering diagnostics."*
 
 ---
 

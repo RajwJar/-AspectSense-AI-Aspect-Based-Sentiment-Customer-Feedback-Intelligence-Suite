@@ -104,10 +104,10 @@ st.sidebar.caption("Provide `GEMINI_API_KEY` in environment or `.env` for real-t
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 👤 Project Metadata")
-st.sidebar.markdown("**Author:** Raj Keshav")
-st.sidebar.markdown("**Reg No:** REG-2024-NLP-8842")
-st.sidebar.markdown("**Project:** AspectSense AI")
-st.sidebar.markdown("**Track:** NLP & LLM Capstone 2026")
+st.sidebar.markdown("**Author:** Keshav Raj")
+st.sidebar.markdown("**Reg No:** 23FE10CDS00476")
+st.sidebar.markdown("**Program:** Full Stack AI/NLP (MUJ)")
+st.sidebar.markdown("**Branch:** B.Tech CSE (Data Science)")
 
 # Header
 st.markdown('<div class="main-title">🔍 AspectSense AI</div>', unsafe_allow_html=True)

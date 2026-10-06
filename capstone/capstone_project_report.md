@@ -1,9 +1,9 @@
 # AspectSense AI: Aspect-Based Sentiment Analysis & Google Gemini LLM Root-Cause Diagnostics
 ## Final Capstone Technical Report
 
-**Author:** Raj Keshav  
-**Registration Number:** REG-2024-NLP-8842  
-**Track:** Advanced Natural Language Processing & Generative AI Capstone 2026  
+**Author:** Keshav Raj  
+**Registration Number:** 23FE10CDS00476  
+**Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)  
 **Repository:** [github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite](https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite)  
 **Date:** October 2026  
 
@@ -89,7 +89,7 @@ The system architecture follows a decoupled, three-tier pipeline:
 
 ---
 
-## 5. Mathematical Formulations & Methodology
+## 5. Mathematical Formulations &o it again Methodology
 
 ### 5.1 Contrastive Clause Segmentation
 Let a customer review document $D$ be a sequence of tokens. $D$ is split into an ordered set of clauses $\mathcal{C} = \{C_1, C_2, \dots, C_k\}$ using a regular expression boundary delimiter $\mathcal{B}$:

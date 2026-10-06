@@ -6,12 +6,12 @@
 ## 📌 Project & Student Information
 | Metadata Field | Value / Details |
 |---|---|
-| **Student Name** | **Raj Keshav** |
-| **Registration Number** | **REG-2024-NLP-8842** |
+| **Student Name** | **Keshav Raj** |
+| **Registration Number** | **23FE10CDS00476** |
 | **Project Title** | **AspectSense AI: Aspect-Based Sentiment & Feedback Intelligence Engine with Gemini LLM Integration** |
 | **GitHub Username** | **[RajwJar](https://github.com/RajwJar)** |
 | **Repository URL** | **[https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite](https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite)** |
-| **Training Program Details** | **Advanced NLP & Generative AI Specialization / Capstone Track 2026** |
+| **Training Program Details** | **Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)** |
 
 ---
 

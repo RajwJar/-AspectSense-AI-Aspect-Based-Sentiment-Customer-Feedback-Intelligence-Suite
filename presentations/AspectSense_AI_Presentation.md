@@ -3,7 +3,7 @@ marp: true
 theme: default
 paginate: true
 header: "AspectSense AI | NLP & LLM Capstone"
-footer: "Raj Keshav (REG-2024-NLP-8842)"
+footer: "Keshav Raj (23FE10CDS00476) | Manipal University Jaipur"
 style: |
   section {
     background-color: #0f172a;
@@ -24,9 +24,9 @@ style: |
 # AspectSense AI
 ### Aspect-Based Sentiment Analysis & Google Gemini LLM Root-Cause Diagnostics
 
-**Author:** Raj Keshav  
-**Registration Number:** REG-2024-NLP-8842  
-**Track:** Advanced NLP & Generative AI Capstone 2026  
+**Author:** Keshav Raj  
+**Registration Number:** 23FE10CDS00476  
+**Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)  
 **Repository:** [github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite](https://github.com/RajwJar/-AspectSense-AI-Aspect-Based-Sentiment-Customer-Feedback-Intelligence-Suite)
 
 ---

@@ -45,7 +45,7 @@ def generate_all_notebooks():
     nb1_cells = [
         md_cell("""# Notebook 01: Dataset Collection & Exploratory Data Analysis (EDA)
 ### Project: AspectSense AI - Multi-Aspect Customer Feedback Intelligence
-**Author:** Raj Keshav | **Track:** NLP & LLM Capstone 2026
+**Author:** Keshav Raj | **Reg No:** 23FE10CDS00476 | **Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)
 
 This notebook covers:
 1. Multi-domain benchmark customer review acquisition and structure.
@@ -100,7 +100,7 @@ plt.show()""")
     nb2_cells = [
         md_cell("""# Notebook 02: NLP Preprocessing & Aspect Extraction
 ### Project: AspectSense AI
-**Author:** Raj Keshav | **Track:** NLP & LLM Capstone 2026
+**Author:** Keshav Raj | **Reg No:** 23FE10CDS00476 | **Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)
 
 This notebook walks through:
 1. Normalization, contraction expansion, and HTML/URL cleaning.
@@ -138,7 +138,7 @@ for mention in extracted["aspect_mentions"]:
     nb3_cells = [
         md_cell("""# Notebook 03: ABSA Model Evaluation & Benchmarking
 ### Project: AspectSense AI
-**Author:** Raj Keshav | **Track:** NLP & LLM Capstone 2026
+**Author:** Keshav Raj | **Reg No:** 23FE10CDS00476 | **Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)
 
 This notebook covers:
 1. Aspect-level polarity scoring with hyperbolic tangent normalization.
@@ -195,7 +195,7 @@ plt.show()""")
     nb4_cells = [
         md_cell("""# Notebook 04: Gemini LLM Integration & Root-Cause Diagnostics
 ### Project: AspectSense AI
-**Author:** Raj Keshav | **Track:** NLP & LLM Capstone 2026
+**Author:** Keshav Raj | **Reg No:** 23FE10CDS00476 | **Program:** Full Stack AI/NLP Program / Manipal University Jaipur / B.Tech CSE (Data Science)
 
 This notebook demonstrates:
 1. Google Gemini 3.8 Flash LLM integration (`google-genai` SDK).
