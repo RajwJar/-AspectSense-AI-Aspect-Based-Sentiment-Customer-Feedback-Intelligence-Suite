@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AspectSense AI - Presentation Deck</title>
+    <style>
+        :root {
+            --bg: #090d16;
+            --card-bg: #131b2e;
+            --border: #22304d;
+            --primary: #38bdf8;
+            --secondary: #818cf8;
+            --accent: #c084fc;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --success: #34d399;
+            --danger: #f87171;
+            --warning: #fbbf24;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 18px 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            background: rgba(9, 13, 22, 0.85);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .brand {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .slide-counter {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            background: var(--card-bg);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .slide-container {
+            width: 100%;
+            max-width: 1000px;
+            min-height: 560px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .slide {
+            display: none;
+            opacity: 0;
+            transform: translateY(12px);
+            transition: all 0.35s ease-out;
+        }
+
+        .slide.active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 30%, var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(34, 48, 77, 0.4);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 16px 0;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .pill-blue { background: #0369a1; color: #bae6fd; }
+        .pill-green { background: #065f46; color: #a7f3d0; }
+        .pill-purple { background: #581c87; color: #e9d5ff; }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        button {
+            background: var(--border);
+            color: var(--text);
+            border: none;
+            padding: 10px 22px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            background: var(--primary);
+            color: #090d16;
+        }
+
+        button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #090d16;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">🔍 AspectSense AI</div>
+        <div class="slide-counter" id="slide-num">Slide 1 of 8</div>
+    </header>
+
+    <main>
+        <div class="slide-container">
+            <!-- Slide 1: Title -->
+            <div class="slide active">
+                <span class="pill pill-blue">NLP & Generative AI Capstone 2026</span>
+                <span class="pill pill-purple">API Integration: Gemini 3.8 Flash</span>
+                <h1 style="margin-top: 16px;">AspectSense AI</h1>
+                <p style="font-size: 1.3rem; color: #94a3b8;">Aspect-Based Sentiment & Customer Feedback Intelligence Suite</p>
+                <div class="card" style="margin-top: 30px;">
+                    <p style="margin: 0;"><strong>Author:</strong> Raj Keshav | <strong>Registration:</strong> REG-2024-NLP-8842</p>
+                    <p style="margin: 6px 0 0 0;"><strong>Repository:</strong> github.com/rajkeshav2324/NLP_Pro</p>
+                    <p style="margin: 6px 0 0 0;"><strong>Track:</strong> Advanced NLP, ABSA Modeling & LLM Integration</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Problem Statement -->
+            <div class="slide">
+                <h2>1. Problem Statement & Motivation</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>❌ Traditional Sentiment Analysis</h3>
+                        <p>Assigns a single document-level label (e.g. <em>Positive</em> or <em>Negative</em>). Masks critical product flaws when a customer praises one feature while condemning another.</p>
+                        <div class="highlight-box">
+                            <em>"Stunning screen, but battery drains in 3 hours."</em> &rarr; Misclassified as Neutral!
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>✅ AspectSense Solution</h3>
+                        <p>Deconstructs customer discourse into discrete feature aspects, scores localized polarities, and uses <strong>Gemini 3.8 Flash LLM</strong> to diagnose engineering root causes.</p>
+                        <ul style="margin-left: 20px; color: #cbd5e1; line-height: 1.8;">
+                            <li>Clause segmentation</li>
+                            <li>Multi-aspect ontology matching</li>
+                            <li>Automated empathetic support drafting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Architecture -->
+            <div class="slide">
+                <h2>2. End-to-End System Architecture</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>1. NLP Ingestion</h3>
+                        <p>• Contraction normalization<br>• Conjunction segmentation<br>• Window negation tagging<br>• POS & N-gram filtering</p>
+                    </div>
+                    <div class="card">
+                        <h3>2. ABSA Classifier</h3>
+                        <p>• Hyperbolic tangent scaling<br>• Intensifier multipliers<br>• Emotion tone detection<br>• Critical urgency triage</p>
+                    </div>
+                    <div class="card">
+                        <h3>3. LLM API Synthesis</h3>
+                        <p>• Gemini 3.8 Flash API<br>• Root-cause diagnostics<br>• Executive recommendations<br>• Customer reply drafts</p>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 24px;">
+                    <strong>Unified Interface:</strong> Exposes interactive Streamlit Web UI + High-Throughput FastAPI REST endpoints.
+                </div>
+            </div>
+
+            <!-- Slide 4: Key Features -->
+            <div class="slide">
+                <h2>3. Key Features & Capabilities</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>🎯 Fine-Grained ABSA Engine</h3>
+                        <p>Extracts features across Smartphones, Laptops, Audio, Cloud SaaS, and Hospitality. Maps synonyms (e.g., <em>OLED, AMOLED, 120Hz</em> &rarr; <code>screen_display</code>).</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤖 Contextual LLM Reasoning</h3>
+                        <p>Goes beyond classification to answer <em>why</em> the defect happened and <em>what actions</em> engineering and QA must take to prevent recurrences.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🚨 Urgency & Emotion Triaging</h3>
+                        <p>Automatically flags <em>Critical</em> tickets (outages, safety hazards, refund threats) to cut customer support SLA turnaround times.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🛡️ Graceful Offline Fallback</h3>
+                        <p>Flawless zero-error execution in air-gapped environments via deterministic heuristic simulation when API keys are absent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Experimental Evaluation -->
+            <div class="slide">
+                <h2>4. Experimental Evaluation & Results</h2>
+                <div class="grid-3">
+                    <div class="card" style="text-align: center;">
+                        <h1 style="color: var(--success); font-size: 2.8rem; margin: 0;">91.7%</h1>
+                        <p style="margin-top: 8px;"><strong>ABSA Accuracy</strong></p>
+                        <small style="color: var(--text-muted);">Multi-domain benchmark</small>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h1 style="color: var(--primary); font-size: 2.8rem; margin: 0;">0.908</h1>
+                        <p style="margin-top: 8px;"><strong>Macro F1-Score</strong></p>
+                        <small style="color: var(--text-muted);">Balanced across all classes</small>
+                    </div>
+                    <div class="card" style="text-align: center;">
+                        <h1 style="color: var(--secondary); font-size: 2.8rem; margin: 0;">1.8 ms</h1>
+                        <p style="margin-top: 8px;"><strong>NLP Latency</strong></p>
+                        <small style="color: var(--text-muted);">Sub-millisecond throughput</small>
+                    </div>
+                </div>
+                <div class="highlight-box" style="margin-top: 24px;">
+                    <strong>Benchmark:</strong> Evaluated on 50+ annotated multi-aspect customer reviews across 6 industry sectors.
+                </div>
+            </div>
+
+            <!-- Slide 6: Git Workflow & Issue Management -->
+            <div class="slide">
+                <h2>5. Git Workflow & Peer Review Lifecycle</h2>
+                <p>Strict branch-and-PR engineering workflow enforced throughout the development lifecycle:</p>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>📋 Assigned GitHub Issues</h3>
+                        <p>• #1: Dataset Collection & EDA<br>• #2: ABSA Model & LLM Integration<br>• #3: Testing & Evaluation Suite<br>• #4: Documentation & Capstone<br>• #5: Deployment & Dashboard</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔄 Pull Request Protocol</h3>
+                        <p>• Feature branches (<code>feature/*</code>)<br>• Automated CI unit test validations<br>• Peer review checklists & approvals<br>• Clean merge commits to <code>main</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Live Demo & Screenshots -->
+            <div class="slide">
+                <h2>6. Interfaces: Dashboard & REST API</h2>
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>🖥️ Streamlit Interactive UI</h3>
+                        <p>• Real-time single review analyzer<br>• Multi-aspect polarity breakdown cards<br>• Root-cause diagnostic viewer<br>• 1-click empathetic support draft</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚡ FastAPI Production API</h3>
+                        <p>• <code>POST /api/v1/analyze</code><br>• <code>POST /api/v1/batch</code><br>• <code>GET /api/v1/aspects</code><br>• OpenAPI / Swagger at <code>/docs</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Conclusion -->
+            <div class="slide">
+                <h2>7. Conclusion & Future Roadmap</h2>
+                <div class="highlight-box">
+                    <strong>Impact:</strong> AspectSense AI successfully unifies traditional syntactic NLP precision with generative LLM reasoning, transforming messy unstructured feedback into actionable enterprise intelligence.
+                </div>
+                <div class="grid-2" style="margin-top: 24px;">
+                    <div class="card">
+                        <h3>🌟 Future Milestones</h3>
+                        <p>• Fine-tuned LoRA adapter on domain reviews<br>• Multimodal image parsing for damaged product photos<br>• Real-time streaming voice review transcription via Gemini Live</p>
+                    </div>
+                    <div class="card">
+                        <h3>🙏 Thank You!</h3>
+                        <p><strong>Codebase:</strong> github.com/rajkeshav2324/NLP_Pro<br><strong>Questions & Discussion Welcome!</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="controls">
+                <button id="btn-prev" onclick="prevSlide()" disabled>&larr; Previous</button>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn-primary" onclick="window.open('http://localhost:8501', '_blank')">🚀 Launch Dashboard</button>
+                </div>
+                <button id="btn-next" onclick="nextSlide()">Next &rarr;</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideCounter = document.getElementById('slide-num');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        function updateSlide() {
+            slides.forEach((s, idx) => {
+                s.classList.toggle('active', idx === currentSlide);
+            });
+            slideCounter.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+            btnPrev.disabled = currentSlide === 0;
+            btnNext.disabled = currentSlide === slides.length - 1;
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+            if (e.key === 'ArrowLeft') prevSlide();
+        });
+    </script>
+</body>
+</html>
