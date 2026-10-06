@@ -1,0 +1,53 @@
+{
+  "domains": {
+    "Smartphones": {
+      "battery": ["battery", "battery life", "endurance", "drain", "charging", "charger", "fast charging", "mah"],
+      "screen": ["screen", "display", "oled", "amoled", "refresh rate", "brightness", "resolution", "panel"],
+      "camera": ["camera", "photo", "lens", "low-light", "zoom", "sensors", "video recording", "night mode"],
+      "performance": ["performance", "speed", "processor", "chipset", "lag", "snappy", "multitasking", "stutter"],
+      "build_quality": ["build quality", "chassis", "durability", "casing", "materials", "glass", "aluminum"],
+      "pricing": ["price", "pricing", "expensive", "dollar", "cost", "value", "overpriced", "cheap"],
+      "customer_service": ["customer service", "support", "warranty", "replacement", "repair", "service center"]
+    },
+    "Laptops": {
+      "performance": ["performance", "cpu", "gpu", "render", "ram", "memory", "compile", "processor"],
+      "battery": ["battery", "battery life", "battery longevity", "hours", "charging", "endurance"],
+      "keyboard": ["keyboard", "keys", "typing", "key travel", "tactile"],
+      "trackpad": ["trackpad", "touchpad", "gestures", "ghost clicks"],
+      "display": ["display", "screen", "mini-led", "120hz", "colors", "brightness"],
+      "fan_noise": ["fan", "fan noise", "cooling", "thermal", "jet engine", "loud", "heat"],
+      "pricing": ["price", "cost", "value", "overpriced", "dollars"],
+      "customer_support": ["customer support", "ticket", "warranty", "repair", "service"]
+    },
+    "Audio & Headphones": {
+      "audio_quality": ["audio clarity", "sound", "soundstage", "treble", "mids", "frequency", "clarity"],
+      "bass": ["bass", "low end", "punchy", "subwoofer", "boom"],
+      "noise_cancellation": ["noise cancellation", "anc", "ambient sound", "isolation", "silence"],
+      "comfort": ["comfort", "ear pads", "cushions", "headband", "sweat", "clamping force", "glasses"],
+      "battery": ["battery", "battery life", "playback time", "charging"],
+      "connectivity": ["bluetooth", "wireless", "drop out", "latency", "connection", "cable"],
+      "microphone": ["microphone", "mic", "call quality", "voice"]
+    },
+    "SaaS Cloud Platform": {
+      "reliability": ["uptime", "outage", "downtime", "incident", "sync", "stability", "corruption"],
+      "speed": ["speed", "latency", "dashboard speed", "load time", "fast", "queries"],
+      "pricing": ["pricing", "cost", "tiers", "quota", "billing", "charges", "expensive"],
+      "support": ["support", "ticket", "response time", "customer support", "resolution"],
+      "documentation": ["documentation", "docs", "sdk", "snippets", "api reference", "guides"],
+      "features": ["etl", "pipeline", "security", "permissions", "sso", "authentication", "integrations"]
+    },
+    "Hospitality": {
+      "cleanliness": ["cleanliness", "dirty", "smell", "odor", "towels", "housekeeping", "sanitary"],
+      "service": ["service", "staff", "front desk", "concierge", "reception", "attitude", "polite"],
+      "comfort": ["bed", "room", "quietness", "soundproofing", "ac", "air conditioning", "shower", "hot water"],
+      "amenities": ["pool", "spa", "gym", "buffet", "breakfast", "restaurant", "view"],
+      "location": ["location", "downtown", "beachfront", "convenient", "distance", "neighborhood"],
+      "pricing": ["price", "expensive", "hidden fees", "value", "overpriced"]
+    }
+  },
+  "sentiment_lexicon": {
+    "positive_intensifiers": ["absolutely", "extremely", "incredibly", "unmatched", "stunning", "spectacular", "flawless", "superb"],
+    "negative_intensifiers": ["terribly", "utterly", "disastrously", "excruciatingly", "horribly", "completely", "severely"],
+    "contrastive_conjunctions": ["but", "however", "although", "though", "yet", "nevertheless", "on the other hand", "except", "while"]
+  }
+}
