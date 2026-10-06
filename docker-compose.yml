@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  aspectsense:
+    build: .
+    container_name: aspectsense-ai-app
+    ports:
+      - "8501:8501"  # Streamlit Dashboard
+      - "8000:8000"  # FastAPI REST API
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - GEMINI_MODEL=gemini-3.8-flash
+    restart: unless-stopped
